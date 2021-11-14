@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kerala t</title>
+    <title>keralat</title>
     <link href="signup.css" type="text/css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -14,6 +14,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="signup.js"></script>
 </head>
 <body>
     
@@ -51,40 +52,46 @@
                      <div class="col-lg-7 px-7 pt-5">
                          <h1 class=" font-weight-bold py-3">Kerala Tourism</h1>
                          <h4>Create New Account</h4>
-                         <form>
+                         <form action="dest.html"onsubmit="return validation()">
                             <div class="foam-row">
                                 <div class="col-lg-7">
-                                    <input type="text" placeholder="First name" class="form-control my-3 p-4">
+                                    <input type="text" placeholder="User Name" class="form-control my-3 p-4" id="user" autocomplete="off">
+                                    <span id="username" class="text-danger font-weight-bold"> </span>
+                                   
                                 </div>
                             </div>
                             <div class="foam-row">
-                                <div class="col-lg-7">
-                                    <input type="text" placeholder="Last name" class="form-control my-3 p-4">
-                                </div>
+                                
                             </div>
                              <div class="foam-row">
                                  <div class="col-lg-7">
-                                     <input type="email" placeholder="Email-Address" class="form-control my-3 p-4">
+                                     <input type="email" placeholder="Email-Address" class="form-control my-3 p-4" id="emails" autocomplete="off">
+                                     <span id="emailids" class="text-danger font-weight-bold"> </span>
+                                     
                                  </div>
                              </div>
                              <div class="foam-row">
                                 <div class="col-lg-7">
-                                    <input type="password" placeholder="Enter password" class="form-control">
+                                    <input type="password" placeholder="Enter password" class="form-control" id="pass" autocomplete="off">
+                                    <span id="passwords" class="text-danger font-weight-bold"> </span>
+                                  
                                 </div>
                             </div>
                             <div class="foam-row">
                                 <div class="col-lg-7">
-                                    <input type="password" placeholder="Re-Enter password" class="form-control">
+                                    <input type="password" placeholder="Re-Enter password" class="form-control" id="conpass" autocomplete="off">
+                                    <span id="confrmpass" class="text-danger font-weight-bold"> </span>
                                 </div>
                             </div>
                             <div class="foam-row">
                                 <div class="col-lg-7">
-                                    <input type="text" placeholder="Mobile number" class="form-control my-3 p-4">
+                                    <input type="text" placeholder="Mobile number" class="form-control my-3 p-4" id="mobileNumber" autocomplete="off">
+                                    <span id="mobileno" class="text-danger font-weight-bold"> </span>
                                 </div>
                             </div>
                             <div class="foam-row">
                                 <div class="col-lg-7">
-                                   <button type="button" class="btn1 mt-3 mb-5">Sign Up</button>
+                                   <button type="submit" class="btn1 mt-3 mb-5" id="submit">Sign Up</button>
                                 </div>
                             </div>
                             
